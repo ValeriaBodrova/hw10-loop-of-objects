@@ -6,7 +6,7 @@ let users = [
     {"index":4,"isActive":true,"balance":"$3,261.65","name":"Mcfadden Horne","gender":"male","phone":"+1 (942) 565-3988","address":"120 Scholes Street, Kirk, Michigan, 1018"}, 
     {"index":5,"isActive":false,"balance":"$1,790.56","name":"Suzette Lewis","gender":"female","phone":"+1 (837) 586-3283","address":"314 Dunne Place, Bawcomville, Guam, 9053"}
   ];
-  
+  //
   //тут використала регулярний вираз, щоб перетворити значення ключа balance на число з точкою без зайвих елементів
   let phoneNumbers = users
   .filter(user => parseFloat(user.balance.replace(/[^0-9.-]+/g, "")) > 2000)
